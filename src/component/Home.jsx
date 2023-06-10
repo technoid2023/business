@@ -103,9 +103,8 @@ const Home = () => {
             <div id="slider">
               <figure>
                 <img src="assests\service1.jpg" alt="" />
-                <img src="assests\service2.jpg" alt="" />
                 <img src="assests\service3.jpg" alt="" />
-                <img src="assests\service3.jpg" alt="" />
+                
               </figure>
             </div>
           </div>
@@ -115,8 +114,7 @@ const Home = () => {
               <figure>
                 <img src="assests\company1.jpg" alt="" />
                 <img src="assests\company2.jpg" alt="" />
-                <img src="assests\company2.jpg" alt="" />
-                <img src="assests\company3.jpg" alt="" />
+              
               </figure>
             </div>
           </div>
@@ -128,8 +126,7 @@ const Home = () => {
               <figure>
                 <img src="assests\crt1.jpg" alt="" />
                 <img src="assests\crt2.jpg" alt="" />
-                <img src="assests\crt1.jpg" alt="" />
-                <img src="assests\crt2.jpg"      alt="" />
+               
               </figure>
             </div>
           </div>

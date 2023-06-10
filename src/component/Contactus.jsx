@@ -91,8 +91,10 @@ const Contactus = () => {
             </form>
             <div><Toaster/></div>
           </div>
+
+
           {/* Left contact page */}
-          <div className="direct-contact-container">
+        <div className="direct-contact-container">
           <h4 class='text'>Reach Us</h4>
             <ul className="contact-list">
               <li className="list-item">
