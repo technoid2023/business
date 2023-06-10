@@ -28,96 +28,66 @@ const Home = () => {
   return (
     <Layout >
       <div className='homemain'>
-
-        <div className="mid-head">
-
-          <p style={{ color: "black", fontSize: 20 }}>
-            <b>Welcome to tech world</b>
-          </p>
-        </div>
-        <div
-          id="carouselExampleIndicators"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={0}
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            />
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={1}
-              aria-label="Slide 2"
-            />
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={2}
-              aria-label="Slide 3"
-            />
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src="assests/service2.jpg" className="d-block w-100" alt="..." />
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assests/service2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <button className='btn btn-danger' onClick={() => { document.location.assign('/quote') }}>Get Quote</button>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
             </div>
-            <div className="carousel-item">
-              <img src="assests/home1.jpg" className="d-block w-100" alt="..." />
+            <div class="carousel-item">
+              <img src="assests/home1.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <button className='btn btn-warning' onClick={() => { document.location.assign('/quote') }}>Get Quote</button>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
             </div>
-            <div className="carousel-item">
-              <img src="assests/company3.jpg" className="d-block w-100" alt="..." />
+            <div class="carousel-item">
+              <img src="assests/company3.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <button className='btn btn-info' onClick={() => { document.location.assign('/quote') }}>Get Quote</button>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
             </div>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
-            <span className="visually-hidden">Previous</span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true" />
-            <span className="visually-hidden">Next</span>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
 
-
-        <button type="button" className="btn-float-right" onClick={() => { document.location.assign('/contact') }}>
-          Get Quote
-        </button>
 
         {/* carousel container ended */}
         {/* box containers started */}
         <div className='thirdsection'>
-          <div className="card" style={{width: "18rem"}}>
-            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..."/>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+          <div className="card" style={{ width: "18rem" }}>
+            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
           </div>
-          <div className="card" style={{width: "18rem"}}>
-            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..."/>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+          <div className="card" style={{ width: "18rem" }}>
+            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
           </div>
-          <div className="card" style={{width: "18rem"}}>
-            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..."/>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
+          <div className="card" style={{ width: "18rem" }}>
+            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
           </div>
         </div>
         <div

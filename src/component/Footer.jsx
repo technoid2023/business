@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='app-container'>
         <footer>
         <div className="footer-content">
-        <p>Copyright &copy; ABC Company All Right Reserve {new Date().getFullYear()} ||Devolped & Designed By  <a href="https://google.com">Technoid_Kolkata</a>  </p>
+        <p>Copyright &copy; ABC Company All Right Reserve {new Date().getFullYear()} ||Devolped & Designed By  <Link to="https://google.com">Technoid_Kolkata</Link>  </p>
         </div>
         </footer>
     </div>
