@@ -4,6 +4,8 @@ import '../css/contactus.css'
 import {Link} from 'react-router-dom'
 import emailjs from 'emailjs-com';
 import { Toaster, toast } from 'react-hot-toast';
+import { FaFacebookF,FaLinkedinIn,FaYoutube } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Contactus = () => {
 
@@ -25,11 +27,11 @@ const Contactus = () => {
   };
   return (
     <Layout className="conmain">
-      <div><Toaster/></div>
-      <h1 className="section-header">Contact Us</h1>
+      
       <section id="contact">
         <div className="contact-wrapper">
           <div className="social">
+            <h4 class='text'>Write To US</h4>
             <form onSubmit={sendEmail} className="form-horizontal">
               <div className="form-group">
                 <div className="col-sm-12">
@@ -87,9 +89,11 @@ const Contactus = () => {
                 </div>
               </button>
             </form>
+            <div><Toaster/></div>
           </div>
           {/* Left contact page */}
           <div className="direct-contact-container">
+          <h4 class='text'>Reach Us</h4>
             <ul className="contact-list">
               <li className="list-item">
                 <i className="fa fa-map-marker fa-2x">
@@ -121,22 +125,22 @@ const Contactus = () => {
             <ul className="social-media-list">
               <li>
                 <Link to="#" target="" className="contact-icon">
-                  <i className="fa fa-facebook" aria-hidden="true" />
+              <h1><FaFacebookF size='20' color='blue'/></h1>
                 </Link>
               </li>
               <li>
                 <Link to="#" target="_blank" className="contact-icon">
-                  <i className="fa fa-google" aria-hidden="true" />
+                <h1><SiGmail size='20' color='red'/></h1>
                 </Link>
               </li>
               <li>
                 <Link to="#" target="_blank" className="contact-icon">
-                  <i className="fa fa-instagram" aria-hidden="true" />
+                <h1><FaLinkedinIn size='20' color='blue'/></h1>
                 </Link>
               </li>
               <li>
                 <Link to="#" target="_blank" className="contact-icon">
-                  <i className="fa fa-linkedin" aria-hidden="true" />
+                <h1><FaYoutube size='20' color='red'/></h1>
                 </Link>
               </li>
             </ul>
