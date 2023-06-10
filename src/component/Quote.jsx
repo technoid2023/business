@@ -26,26 +26,26 @@ const Quote = () => {
     <Layout>
       <div><Toaster/></div>
       <div className='container' style={{border:'1px solid GrayText',
-       backgroundColor:'GrayText', borderRadius:'20px',boxShadow:'0 15px 10px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19)', width:'60%', padding:'5%', marginTop:'5%',marginBottom:'5%'}}>
-        <h1 style={{textAlign:'center', marginBottom:'5%', color:'white',fontFamily:'Oswald, sans-serif'}}>Quotation Form</h1>
+       backgroundColor:'transparent', borderRadius:'20px',boxShadow:'0 15px 10px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19)', width:'60%', padding:'5%', marginTop:'5%',marginBottom:'5%'}}>
+        <h1 style={{textAlign:'center', marginBottom:'5%', color:'white',fontFamily:'Oswald, sans-serif'}}>Get Quotation</h1>
         <form className="row g-3" onSubmit={sendEmail}>
           <div className="col-md-4">
             <label htmlFor="inputEmail4" className="form-label">
               Name
             </label>
-            <input type="text" className="form-control" placeholder='Eneter your name' name='name' required='true' />
+            <input type="text" className="form-control" placeholder='Enter your name' name='name' required='true' />
           </div>
           <div className="col-md-4">
             <label htmlFor="inputPassword4" className="form-label">
               Email
             </label>
-            <input type="email" className="form-control" placeholder='Eneter your email' name='email' required='true' />
+            <input type="email" className="form-control" placeholder='Enter your email' name='email' required='true' />
           </div>
           <div className="col-md-4">
             <label htmlFor="inputEmail4" className="form-label">
               Mobile No.
             </label>
-            <input type="number" className="form-control" placeholder='Eneter your mobile no.' name='mobile' required='true' />
+            <input type="number" className="form-control" placeholder='Enter your mobile no.' name='mobile' required='true' />
           </div>
           <div className="col-md-6">
             <label htmlFor="inputEmail4" className="form-label">

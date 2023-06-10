@@ -20,7 +20,7 @@ const Header = () => {
 
                 <div className="nav-container">
                     <div className='company-info'>
-                        <h2>Company Name and Address</h2>
+                        <h2 class='headText'>ABC Solutions Pvt Ltd</h2>
                     </div>
                     <nav className="navbar">
                         <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
