@@ -93,6 +93,66 @@ const Product = () => {
           <h3>Brand</h3>
         </div>
       </div>
+      <div className="product-card">
+        <div className="image-slider">
+          <button className="slider-button prev" onClick={goToPrevImage}>
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <img src={images[currentImageIndex]} alt="photo1" className="product-image" />
+          <button className="slider-button next" onClick={goToNextImage}>
+            <i className="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div className="product-info">
+          <h2>Product Title</h2>
+          <h3>Brand</h3>
+        </div>
+      </div>
+      <div className="product-card1">
+        <div className="image-slider">
+          <button className="slider-button prev" onClick={goToPrevImage1}>
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <img src={images1[currentImageIndex1]} alt="photo1" className="product-image" />
+          <button className="slider-button next" onClick={goToNextImage1}>
+            <i className="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div className="product-info1">
+          <h2>Product Title</h2>
+          <h3>Brand</h3>
+        </div>
+      </div>
+      <div className="product-card2">
+        <div className="image-slider">
+          <button className="slider-button prev" onClick={goToPrevImage2}>
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <img src={images2[currentImageIndex2]} alt="photo1" className="product-image" />
+          <button className="slider-button next" onClick={goToNextImage2}>
+            <i className="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div className="product-info2">
+          <h2>Product Title</h2>
+          <h3>Brand</h3>
+        </div>
+      </div>
+      <div className="product-card2">
+        <div className="image-slider">
+          <button className="slider-button prev" onClick={goToPrevImage2}>
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <img src={images2[currentImageIndex2]} alt="photo1" className="product-image" />
+          <button className="slider-button next" onClick={goToNextImage2}>
+            <i className="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div className="product-info2">
+          <h2>Product Title</h2>
+          <h3>Brand</h3>
+        </div>
+      </div>
       </div>
     </Layout>
   )

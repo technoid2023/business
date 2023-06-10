@@ -2,25 +2,56 @@ import React from 'react'
 import Layout from './Layout'
 import '../css/contactus.css'
 import {Link} from 'react-router-dom'
+import emailjs from 'emailjs-com';
+import { Toaster, toast } from 'react-hot-toast';
 
 const Contactus = () => {
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('button');
+    btn.value = 'Sending...';
+    await emailjs.sendForm('gmail', 'technoid', e.target, 'SDCirC6Vq-c14Z7mu')
+      .then((result) => {
+        // alert('Message Sent !!!!');
+        toast.success('Message Sent Successfully!')
+        btn.value = 'Send'
+        // console.log(result.text);
+        e.target.reset();
+      }, (error) => {
+        toast.error("Failed to Sent")
+        console.log(error.text);
+      });
+  };
   return (
     <Layout className="conmain">
+      <div><Toaster/></div>
       <h1 className="section-header">Contact Us</h1>
       <section id="contact">
         <div className="contact-wrapper">
           <div className="social">
-            <form id="contact-form" className="form-horizontal" role="form">
+            <form onSubmit={sendEmail} className="form-horizontal">
               <div className="form-group">
                 <div className="col-sm-12">
                   <input
                     type="text"
-                    className="form-control"
-                    id="name"
+                    className="conform-control"
                     placeholder="NAME"
                     name="name"
                     defaultValue=""
-                    required=""
+                    required="true"
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <div className="col-sm-12">
+                  <input
+                    type="email"
+                    className="conform-control"                   
+                    placeholder="Email"
+                    name="email"
+                    defaultValue=""
+                    required="true"
                   />
                 </div>
               </div>
@@ -28,28 +59,27 @@ const Contactus = () => {
                 <div className="col-sm-12">
                   <input
                     type="number"
-                    className="form-control"
-                    id="mobile"
+                    className="conform-control"                   
                     placeholder="MOBILE NO."
                     name="mobile"
                     defaultValue=""
-                    required=""
+                    required="true"
                   />
                 </div>
               </div>
               <textarea
-                className="form-control"
-                rows={10}
+                className="conform-control"
+                rows={5}
                 placeholder="MESSAGE"
                 name="message"
-                required=""
+                required="true"
                 defaultValue={""}
               />
               <button
                 className="btn btn-primary send-button"
-                id="submit"
                 type="submit"
-                value="SEND"
+                value="send"
+                id="button"
               >
                 <div className="alt-send-button">
                   <i className="fa fa-paper-plane" />
@@ -120,13 +150,3 @@ const Contactus = () => {
 }
 
 export default Contactus
-
-
-
-{/* <div className='social'>
-            <Link><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"/></Link>
-            <Link to='#'><img src="https://w7.pngwing.com/pngs/239/740/png-transparent-twitter-logo-icon-twitter-file-logo-social-media-news-thumbnail.png"/></Link>
-            <Link to='#'><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png"/></Link>
-            <Link to='#'><img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png"/></Link>
-
-          </div> */}

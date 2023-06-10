@@ -6,7 +6,7 @@
   height: 100vh;
   /* padding-top: 15%; */
   flex-wrap: wrap;
-  background-color: rgb(247, 201, 164);
+  /* background-color: rgb(247, 201, 164); */
   
 
 }
@@ -48,7 +48,7 @@
 
 .product-image {
   width: 100%;
-  height: auto;
+  height: 250px;
   margin: auto;
   
 }

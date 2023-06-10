@@ -14,7 +14,6 @@
   .section-header {
       text-align: center;
       margin: 50px auto;
-      margin-top: 15%;
       padding: 5px 0;
       font: 70 40px 'Oswald', sans-serif;
       color: #000000;
@@ -60,9 +59,9 @@
     
   }
   
-  .form-control, 
+  .conform-control, 
   textarea {
-    max-width: 800px;
+    width: 100%;
     background-color: #000;
     color: #fff;
     letter-spacing: 2px;
@@ -186,7 +185,7 @@
     width: 60px;
     height: 60px;
     line-height: 60px;
-    border-radius: 50%;
+    border-radius: 60%;
     opacity: 0;
     box-shadow: 0 15px 10px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all .2s ease-in-out;
@@ -243,7 +242,7 @@
       float: none;
       margin: 0 auto;
     }  
-    .form-control, textarea {
+    .conform-control, textarea {
       
       margin: 0 auto;
     }
