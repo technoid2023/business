@@ -129,7 +129,7 @@ const Home = () => {
                 <img src="assests\crt1.jpg" alt="" />
                 <img src="assests\crt2.jpg" alt="" />
                 <img src="assests\crt1.jpg" alt="" />
-                <img src="assests\crt2.jpg" alt="" />
+                <img src="assests\crt2.jpg"      alt="" />
               </figure>
             </div>
           </div>
