@@ -177,6 +177,7 @@ const Product = () => {
             <p>description</p>
           </Modal.Body>
 
+
           <Modal.Footer>
             <button className="btn btn-danger" onClick={handleClose}>
               CLOSE

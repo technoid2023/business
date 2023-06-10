@@ -2,6 +2,9 @@ import React from 'react'
 import Layout from './Layout'
 import '../css/home.css'
 
+import { GiAutoRepair } from "react-icons/gi";
+import { TbTruckDelivery } from "react-icons/tb";
+import { FaRegThumbsUp } from "react-icons/fa";
 const Home = () => {
 // let slideIndex = 0;
 
@@ -71,20 +74,20 @@ const Home = () => {
         {/* carousel container ended */}
         {/* box containers started */}
         <div className='thirdsection'>
-          <div className="card" style={{ width: "18rem" }}>
-            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..." />
+        <div className="card bg-transparent border-0" style={{ width: "18rem"}}>
+            <p style={{textAlign:'center'}}><FaRegThumbsUp size='50' /></p>
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
-          <div className="card" style={{ width: "18rem" }}>
-            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..." />
+          <div className="card bg-transparent border-0" style={{ width: "18rem"}}>
+            <p style={{textAlign:'center'}}><GiAutoRepair size='50' /></p>
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
-          <div className="card" style={{ width: "18rem" }}>
-            <img src="https://i0.wp.com/www.iedunote.com/img/23559/what-is-a-company-scaled.jpg" className="card-img-top" alt="..." />
+          <div className="card bg-transparent border-0" style={{ width: "18rem"}}>
+            <p style={{textAlign:'center'}}><TbTruckDelivery size='50' /></p>
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
