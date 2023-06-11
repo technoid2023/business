@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Layout from './Layout';
-import { Modal } from "react-bootstrap";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -43,23 +42,6 @@ const Product = () => {
           </div>
           
         </div>
-
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>name</Modal.Title>
-          </Modal.Header>
-
-          <Modal.Body>
-            <img src='assests/pr5.jpg' className="img-fluid" style={{ height: '300px' }} alt='...'/>
-            <p>description</p>
-          </Modal.Body>
-
-          <Modal.Footer>
-            <button className="btn btn-danger" onClick={handleClose}>
-              CLOSE
-            </button>
-          </Modal.Footer>
-        </Modal>
       </div>
       <div
         data-aos='zoom-in'
@@ -84,23 +66,6 @@ const Product = () => {
           </div>
           
         </div>
-
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>name</Modal.Title>
-          </Modal.Header>
-
-          <Modal.Body>
-            <img src='assests/pr3.jpg' className="img-fluid" style={{ height: '300px' }} alt='...'/>
-            <p>description</p>
-          </Modal.Body>
-
-          <Modal.Footer>
-            <button className="btn btn-danger" onClick={handleClose}>
-              CLOSE
-            </button>
-          </Modal.Footer>
-        </Modal>
       </div>
       <div
         data-aos='zoom-in'
@@ -126,22 +91,6 @@ const Product = () => {
           
         </div>
 
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>name</Modal.Title>
-          </Modal.Header>
-
-          <Modal.Body>
-            <img src='assests/pr3.jpg' className="img-fluid" style={{ height: '300px' }} alt='...'/>
-            <p>description</p>
-          </Modal.Body>
-
-          <Modal.Footer>
-            <button className="btn btn-danger" onClick={handleClose}>
-              CLOSE
-            </button>
-          </Modal.Footer>
-        </Modal>
       </div>
       <div
         data-aos='zoom-in'
@@ -166,24 +115,6 @@ const Product = () => {
           </div>
           
         </div>
-
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>name</Modal.Title>
-          </Modal.Header>
-
-          <Modal.Body>
-            <img src='assests/pr2.jpg' className="img-fluid" style={{ height: '300px' }} alt='...'/>
-            <p>description</p>
-          </Modal.Body>
-
-
-          <Modal.Footer>
-            <button className="btn btn-danger" onClick={handleClose}>
-              CLOSE
-            </button>
-          </Modal.Footer>
-        </Modal>
       </div>
       </div>
       
