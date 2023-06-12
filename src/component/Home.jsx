@@ -63,52 +63,28 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div
-          className="second"
-          data-spy="scroll"
-          data-target=".navbar"
-          data-offset={50}
-        >
-          <div id="section1" className="container-fluid">
-            <h1 style={{ fontSize: 20, marginTop: 2 }}>
-              Images Of Services With Clients
-            </h1>
-            <div id="slider">
-              <figure>
-                <img src="assests\service1.jpg" alt="" />
-                <img src="assests\service2.jpg" alt="" />
-                <img src="assests\service3.jpg" alt="" />
-                <img src="assests\service3.jpg" alt="" />
-              </figure>
-            </div>
-          </div>
-          <div id="section2" className="container-fluid">
-            <h1 style={{ fontSize: 20, marginTop: 2 }}>Company Images</h1>
-            <div id="slider">
-              <figure>
-                <img src="assests\company1.jpg" alt="" />
-                <img src="assests\company2.jpg" alt="" />
-                <img src="assests\company2.jpg" alt="" />
-                <img src="assests\company3.jpg" alt="" />
-              </figure>
-            </div>
-          </div>
-          <div id="section3" className="container-fluid">
-            <h1 style={{ fontSize: 17, marginTop: 2 }}>
-              Awarded and Certification Of company
-            </h1>
-            <div id="slider">
-              <figure>
-                <img src="assests\crt1.jpg" alt="" />
-                <img src="assests\crt2.jpg" alt="" />
-                <img src="assests\crt1.jpg" alt="" />
-                <img src="assests\crt2.jpg" alt="" />
-              </figure>
-            </div>
-          </div>
-        </div>
+      
+        <div class="container1">
+      <div class="image1">
+        <img src="assests/service3.jpg" className='story'/>
+      </div>
+      <div class="text1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repellat, ut voluptate sequi reprehenderit sint non similique aut consequatur nam maxime quas sapiente vel saepe sed amet fugit! Unde, odio.
+      </div>
+    </div>
+    <div class="container1">
+      
+      <div class="text2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repellat, ut voluptate sequi reprehenderit sint non similique aut consequatur nam maxime quas sapiente vel saepe sed amet fugit! Unde, odio.
+      </div>
+      <div class="image2">
+        <img src="assests/service2.jpg" style={{marginLeft:'6rem'}} className='story'/>
+      </div>
+    </div>
+    <hr />
         {/* box containers ended */}
         <div className="social">
+         <center><h4> Our Well Known Customers</h4></center>
         <div className="logo-container-track">
             <div className="clilogo-container">
               <img
