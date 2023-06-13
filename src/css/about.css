@@ -12,16 +12,17 @@
   .info-container {
     display: flex;
     flex-direction: row; /* Change to row */
-    justify-content: space-between; /* Align info and image container */
+    justify-content: space-around; /* Align info and image container */
     width: 100%;
+    margin-top: 6rem;
   }
   
   .info {
     justify-content: right;
     margin: 10px 10px 10px 10px;
-    width: auto;
+    max-width: 55rem;
     margin-bottom: 20px;
-    background-color: #d3d3d3;
+    background-color: transparent;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -43,14 +44,16 @@
     height: auto;
     width: 100%;
     justify-content: right;
+    
   }
   
   .director-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 20rem;
     border: 2px solid #111111;
-    border-radius: 8px;
+    border-radius: 1rem;
     margin-left: 10%;
+   margin-top: 0.5rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
   }
   
@@ -144,4 +147,4 @@
         flex-direction: column;
     }
   }
-  
+ 

@@ -212,8 +212,8 @@
   .social-media-list li:hover a {
     color: #000;
   }
-  
-  
+
+
   /* Begin Media Queries*/
   @media screen and (max-width: 850px) {
     .contact-wrapper {
@@ -229,7 +229,7 @@
     
     .direct-contact-container {
       margin-top: 60px;
-      max-width: 300px;
+      max-width: 200px;
     }    
     .social-media-list li {
       height: 60px;
@@ -284,5 +284,42 @@
   @media screen and (max-width: 400px) {
     .send-button {
       width: 99%;
+    }
+  }
+  @media screen and (max-width: 840px) {
+    .direct-contact-container {
+      max-width: 100%;
+    }
+  
+    .contact-list li,
+    .social-media-list li {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .contact-text {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .direct-contact-container {
+      max-width: 100%;
+    }
+  
+    .contact-list li,
+    .social-media-list li {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .contact-text {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-list li,
+    .social-media-list li {
+      margin-bottom: 10px;
     }
   }

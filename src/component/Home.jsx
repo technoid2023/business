@@ -31,13 +31,15 @@ const Home = () => {
   return (
     <Layout >
       <div className='homemain'>
-        <div className="hero-image1">
-          <div className="hero-text1">
-            <h1>I am John Doe</h1>
-            <p>And I'm a Photographer</p>
-            <button>Get quote</button>
-          </div>
-        </div>
+
+      
+      <img src="assests/home1.jpg"   style={{ height: "28rem" }}class="hero-image" />
+  <div class="hero-text">
+    <h1 style={{fontsize:'50px',color:'darkblue'}}>Welcome to Tech World</h1>
+    <p style={{color:'brown'}}>Be OverPowerd with Online UPS</p>
+    <button>Get Quote</button>
+
+</div>
 
         {/* carousel container ended */}
         {/* box containers started */}
@@ -61,158 +63,133 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div
-          className="second"
-          data-spy="scroll"
-          data-target=".navbar"
-          data-offset={50}
-        >
-          <div id="section1" className="container-fluid">
-            <h1 style={{ fontSize: 20, marginTop: 2 }}>
-              Images Of Services With Clients
-            </h1>
-            <div id="slider">
-              <figure>
-                <img src="assests\service1.jpg" alt="" />
-                <img src="assests\service2.jpg" alt="" />
-                <img src="assests\service3.jpg" alt="" />
-                <img src="assests\service3.jpg" alt="" />
-              </figure>
-            </div>
-          </div>
-          <div id="section2" className="container-fluid">
-            <h1 style={{ fontSize: 20, marginTop: 2 }}>Company Images</h1>
-            <div id="slider">
-              <figure>
-                <img src="assests\company1.jpg" alt="" />
-                <img src="assests\company2.jpg" alt="" />
-                <img src="assests\company2.jpg" alt="" />
-                <img src="assests\company3.jpg" alt="" />
-              </figure>
-            </div>
-          </div>
-          <div id="section3" className="container-fluid">
-            <h1 style={{ fontSize: 17, marginTop: 2 }}>
-              Awarded and Certification Of company
-            </h1>
-            <div id="slider">
-              <figure>
-                <img src="assests\crt1.jpg" alt="" />
-                <img src="assests\crt2.jpg" alt="" />
-                <img src="assests\crt1.jpg" alt="" />
-                <img src="assests\crt2.jpg" alt="" />
-              </figure>
-            </div>
-          </div>
-        </div>
+      
+        <div class="container1">
+      <div class="image1">
+        <img src="assests/service3.jpg" className='story'/>
+      </div>
+      <div class="text1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repellat, ut voluptate sequi reprehenderit sint non similique aut consequatur nam maxime quas sapiente vel saepe sed amet fugit! Unde, odio.
+      </div>
+    </div>
+    <div class="container1">
+      
+      <div class="text2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repellat, ut voluptate sequi reprehenderit sint non similique aut consequatur nam maxime quas sapiente vel saepe sed amet fugit! Unde, odio.
+      </div>
+      <div class="image2">
+        <img src="assests/service2.jpg" style={{marginLeft:'6rem'}} className='story'/>
+      </div>
+    </div>
+    <hr />
         {/* box containers ended */}
         <div className="social">
-          <div className="logo-container-track">
-            <div className="logo-container">
+         <center><h4> Our Well Known Customers</h4></center>
+        <div className="logo-container-track">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
+                src="images/client1.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
+                src="images/client2.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
+                src="images/client3.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
+                src="images/client4.png"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
+                src="images/client5.png"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
+                src="images/client6.jpg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
+                src="images/client1.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
+                src="images/client2.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
+                src="images/client3.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
+                src="images/client4.png"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
+                src="images/client5.png"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
+                src="images/client6.jpg"
+                alt=""
+              />
+            </div> <div className="clilogo-container">
+              <img
+                src="images/client1.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png"
+                src="images/client2.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png"
+                src="images/client3.svg"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png"
+                src="images/client4.png"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png"
+                src="images/client5.png"
                 alt=""
               />
             </div>
-            <div className="logo-container">
+            <div className="clilogo-container">
               <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png"
-                alt=""
-              />
-            </div>
-            <div className="logo-container">
-              <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png"
+                src="images/client6.jpg"
                 alt=""
               />
             </div>

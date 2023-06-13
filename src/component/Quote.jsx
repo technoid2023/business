@@ -27,7 +27,7 @@ const Quote = () => {
       <div><Toaster/></div>
       <div className='container' style={{border:'1px solid GrayText',
        backgroundColor:'transparent', borderRadius:'20px',boxShadow:'0 15px 10px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19)', width:'60%', padding:'5%', marginTop:'5%',marginBottom:'5%'}}>
-        <h1 style={{textAlign:'center', marginBottom:'5%', color:'white',fontFamily:'Oswald, sans-serif'}}>Get Quotation</h1>
+        <h1 style={{textAlign:'center', marginBottom:'5%',font:'bold', color:'darkblue', fontFamily: 'Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif'}}>Get Quotation</h1>
         <form className="row g-3" onSubmit={sendEmail}>
           <div className="col-md-4">
             <label htmlFor="inputEmail4" className="form-label">
