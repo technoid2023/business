@@ -6,38 +6,18 @@ import { GiAutoRepair } from "react-icons/gi";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaRegThumbsUp } from "react-icons/fa";
 const Home = () => {
-// let slideIndex = 0;
 
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}    
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-//   setTimeout(showSlides, 3000); // Change image every 3 seconds
-// }
-// useEffect(() => {
-//   showSlides()
-// },[])
 
   return (
     <Layout >
       <div className='homemain'>
 
       
-      <img src="assests/home1.jpg"   style={{ height: "28rem" }}class="hero-image" />
+      <img src="assests/home1.jpg" style={{ height: "28rem" }} class="hero-image" alt="hero" />
   <div class="hero-text">
     <h1 style={{fontsize:'50px',color:'darkblue'}}>Welcome to Tech World</h1>
     <p style={{color:'brown'}}>Be OverPowerd with Online UPS</p>
-    <button>Get Quote</button>
+    <button onClick={()=>{document.location.assign("/quote")}}>Get Quote</button>
 
 </div>
 
@@ -66,7 +46,7 @@ const Home = () => {
       
         <div class="container1">
       <div class="image1">
-        <img src="assests/service3.jpg" className='story'/>
+        <img src="assests/service3.jpg" className='story' alt='service3'/>
       </div>
       <div class="text1">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repellat, ut voluptate sequi reprehenderit sint non similique aut consequatur nam maxime quas sapiente vel saepe sed amet fugit! Unde, odio.
@@ -78,7 +58,7 @@ const Home = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repellat, ut voluptate sequi reprehenderit sint non similique aut consequatur nam maxime quas sapiente vel saepe sed amet fugit! Unde, odio.
       </div>
       <div class="image2">
-        <img src="assests/service2.jpg" style={{marginLeft:'6rem'}} className='story'/>
+        <img src="assests/service2.jpg" style={{marginLeft:'6rem'}} className='story' alt='service2'/>
       </div>
     </div>
     <hr />
