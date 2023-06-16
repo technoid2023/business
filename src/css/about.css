@@ -137,14 +137,17 @@
       min-height: 100%;
     }
   
-    .director-image {
-      min-width: 100%;
-      max-height: auto;
-      max-width: auto;
-    }
+  
+      .director-image {
+        width: auto;
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+    
     .social-media{
         display: flex;
         flex-direction: column;
     }
   }
- 
+  
