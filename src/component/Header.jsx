@@ -12,10 +12,9 @@ const Header = () => {
         <div>
             <header>
                 <div>
-                    <NavLink exact to="/" className="nav-logo">
-                        {/* <i className></i> */}
-                        LOGO
-                    </NavLink>
+                <NavLink exact to="/" className="nav-logo">
+                    <img src="images/logo.png" alt="Logo" style={{ width: '60px', height: '60px' }} />
+                </NavLink>
                 </div>
 
                 <div className="nav-container">
