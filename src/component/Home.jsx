@@ -78,7 +78,7 @@ const Home = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis repellat, ut voluptate sequi reprehenderit sint non similique aut consequatur nam maxime quas sapiente vel saepe sed amet fugit! Unde, odio.
       </div>
       <div class="image2">
-        <img src="assests/service2.jpg" style={{marginLeft:'6rem'}} className='story'/>
+        <img src="assests/service2.jpg" className='story'/>
       </div>
     </div>
     <hr />

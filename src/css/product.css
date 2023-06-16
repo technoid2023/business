@@ -30,7 +30,7 @@
 .slider-button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   background: none;
   border: none;
   color: #fff;
@@ -68,8 +68,8 @@
 .product-card:hover {
   background-color: #f5f5f5;
   box-shadow: 0px 10px 20px rgba(230, 198, 94, 0.2);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  /* -webkit-transform: scale(1.1);
+  transform: scale(1.1); */
 }
 
 .product-card1:hover {
